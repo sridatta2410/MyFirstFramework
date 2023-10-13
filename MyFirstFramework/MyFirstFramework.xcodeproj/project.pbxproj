@@ -11,21 +11,10 @@
 		0B7B5BA42AD91D1700563D66 /* SayHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B5BA32AD91D1700563D66 /* SayHello.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0B7B5BC92AD91DE200563D66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0B7B5BC52AD91DE100563D66 /* MyFirstFrameworkExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0B7B5BAE2AD91DE000563D66;
-			remoteInfo = MyFirstFrameworkExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0B7B5B992AD91CD100563D66 /* MyFirstFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFirstFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7B5B9C2AD91CD100563D66 /* MyFirstFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFirstFramework.h; sourceTree = "<group>"; };
 		0B7B5BA32AD91D1700563D66 /* SayHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHello.swift; sourceTree = "<group>"; };
-		0B7B5BC52AD91DE100563D66 /* MyFirstFrameworkExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFirstFrameworkExample.xcodeproj; path = ../../MyFirstFrameworkExample/MyFirstFrameworkExample.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,19 +47,10 @@
 		0B7B5B9B2AD91CD100563D66 /* MyFirstFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0B7B5BC52AD91DE100563D66 /* MyFirstFrameworkExample.xcodeproj */,
 				0B7B5B9C2AD91CD100563D66 /* MyFirstFramework.h */,
 				0B7B5BA32AD91D1700563D66 /* SayHello.swift */,
 			);
 			path = MyFirstFramework;
-			sourceTree = "<group>";
-		};
-		0B7B5BC62AD91DE100563D66 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0B7B5BCA2AD91DE200563D66 /* MyFirstFrameworkExample.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,28 +111,12 @@
 			mainGroup = 0B7B5B8F2AD91CD100563D66;
 			productRefGroup = 0B7B5B9A2AD91CD100563D66 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0B7B5BC62AD91DE100563D66 /* Products */;
-					ProjectRef = 0B7B5BC52AD91DE100563D66 /* MyFirstFrameworkExample.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0B7B5B982AD91CD100563D66 /* MyFirstFramework */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0B7B5BCA2AD91DE200563D66 /* MyFirstFrameworkExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = MyFirstFrameworkExample.app;
-			remoteRef = 0B7B5BC92AD91DE200563D66 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B7B5B972AD91CD100563D66 /* Resources */ = {
@@ -227,7 +191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -284,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -320,10 +284,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krify.MyFirstFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,9 +318,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krify.MyFirstFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
