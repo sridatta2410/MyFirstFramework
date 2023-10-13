@@ -1,2 +1,2 @@
 # MyFirstFramework
-Experimenting to develop framework to use with iOS porjects.
+Experimenting to develop framework to use with iOS projects.
